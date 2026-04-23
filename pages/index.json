@@ -48,27 +48,21 @@
                 },
                 "children": [
                   {
-                    "type": "node",
-                    "tag": "h1",
+                    "type": "component",
+                    "component": "Heading",
+                    "props": {
+                      "text": "<!--MENO_RAW_HTML-->Everything you <span class=\"custom-span\" data-meno-span=\"true\">need</span> to build professional website"
+                    },
                     "style": {
                       "base": {
-                        "fontSize": "var(--h-fs)",
-                        "letterSpacing": "var(--h-ls)",
-                        "fontWeight": "var(--h-fw)",
                         "marginBottom": "var(--h-m)",
                         "textAlign": "center",
-                        "lineHeight": "var(--h-lh)",
-                        "color": "var(--text)",
-                        "maxWidth": "725px"
+                        "maxWidth": "725px",
+                        "fontSize": "var(--h-fs)"
                       },
                       "tablet": {},
                       "mobile": {}
-                    },
-                    "children": "<!--MENO_RAW_HTML-->Everything you <span class=\"custom-span\" data-meno-span=\"true\">need</span> to build professional website"
-                  },
-                  {
-                    "type": "component",
-                    "component": "Heading"
+                    }
                   },
                   {
                     "type": "node",
@@ -178,21 +172,18 @@
             },
             "children": [
               {
-                "type": "node",
-                "tag": "h2",
+                "type": "component",
+                "component": "Heading",
+                "props": {
+                  "text": "<!--MENO_RAW_HTML-->This is <span class=\"custom-span\" data-meno-span=\"true\">features</span> headline",
+                  "tag": 1
+                },
                 "style": {
                   "base": {
                     "fontSize": "var(--he-fs)",
-                    "letterSpacing": "var(--h-ls)",
-                    "fontWeight": "var(--h-fw)",
-                    "marginBottom": "var(--h-m)",
-                    "lineHeight": "var(--h-lh)",
-                    "color": "var(--text)"
-                  },
-                  "tablet": {},
-                  "mobile": {}
-                },
-                "children": "<!--MENO_RAW_HTML-->This is <span class=\"custom-span\" data-meno-span=\"true\">features</span> headline"
+                    "marginBottom": "var(--h-m)"
+                  }
+                }
               },
               {
                 "type": "node",

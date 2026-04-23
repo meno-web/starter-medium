@@ -1,24 +1,15 @@
 {
   "component": {
-    "interface": {
-      "text": {
-        "type": "string",
-        "default": "<!--MENO_RAW_HTML-->Everything you <span class=\"custom-span\" data-meno-span=\"true\">need</span> to build professional website"
-      }
-    },
     "structure": {
       "type": "node",
-      "tag": "h1",
+      "tag": "h{{tag}}",
       "style": {
         "base": {
           "fontSize": "var(--h-fs)",
           "letterSpacing": "var(--h-ls)",
           "fontWeight": "var(--h-fw)",
-          "marginBottom": "var(--h-m)",
-          "textAlign": "center",
           "lineHeight": "var(--h-lh)",
-          "color": "var(--text)",
-          "maxWidth": "725px"
+          "color": "var(--text)"
         },
         "tablet": {},
         "mobile": {}
@@ -26,6 +17,17 @@
       "children": [
         "{{text}}"
       ]
-    }
+    },
+    "interface": {
+      "text": {
+        "type": "rich-text",
+        "default": "<!--MENO_RAW_HTML-->Everything you <span class=\"custom-span\" data-meno-span=\"true\">need</span> to build professional website"
+      },
+      "tag": {
+        "type": "number",
+        "default": 1
+      }
+    },
+    "acceptsStyles": true
   }
 }

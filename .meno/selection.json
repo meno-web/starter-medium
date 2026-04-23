@@ -1,8 +1,9 @@
 {
-  "filePath": "components/Heading.json",
-  "locator": "components/Heading.json:9-29  <h1>",
-  "navigationPath": [
-    "pages/index.json",
-    "components/Heading.json"
-  ]
+  "filePath": "pages/index.json",
+  "locator": "pages/index.json:174-187  <Heading>",
+  "props": {
+    "text": "<!--MENO_RAW_HTML-->This is <span class=\"custom-span\" data-meno-span=\"true\">features</span> headline",
+    "tag": 1
+  },
+  "navigationPath": []
 }
