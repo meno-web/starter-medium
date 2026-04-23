@@ -16,9 +16,14 @@
         "tablet": {},
         "mobile": {}
       },
-      "children": "{{post.category}}"
+      "children": "{{text}}"
     },
-    "interface": {},
+    "interface": {
+      "text": {
+        "type": "string",
+        "default": "Badge"
+      }
+    },
     "acceptsStyles": true
   }
 }

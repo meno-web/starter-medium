@@ -391,7 +391,10 @@
                         "children": [
                           {
                             "type": "component",
-                            "component": "Badge"
+                            "component": "Badge",
+                            "props": {
+                              "text": "{{post.category}}"
+                            }
                           },
                           {
                             "type": "component",

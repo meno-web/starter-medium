@@ -320,39 +320,17 @@
                   },
                   "children": [
                     {
-                      "type": "link",
-                      "href": "/contact-us",
+                      "type": "component",
+                      "component": "Button",
+                      "props": {
+                        "text": "Contact",
+                        "link": "/contact-us"
+                      },
                       "style": {
-                        "base": {
-                          "display": "inline-flex",
-                          "alignItems": "center",
-                          "justifyContent": "center",
-                          "padding": "var(--b-p)",
-                          "backgroundColor": "var(--accent)",
-                          "color": "var(--white)",
-                          "borderRadius": "var(--b-br)",
-                          "fontSize": "var(--te-fs)",
-                          "letterSpacing": "var(--t-ls)",
-                          "fontWeight": "var(--t-fw)",
-                          "textDecoration": "none",
-                          "transition": "opacity 0.2s"
-                        },
+                        "base": {},
                         "tablet": {},
                         "mobile": {}
-                      },
-                      "interactiveStyles": [
-                        {
-                          "name": "hover",
-                          "prefix": "",
-                          "postfix": ":hover",
-                          "style": {
-                            "base": {
-                              "opacity": "0.85"
-                            }
-                          }
-                        }
-                      ],
-                      "children": "Contact"
+                      }
                     }
                   ]
                 }
