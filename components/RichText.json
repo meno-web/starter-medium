@@ -1,0 +1,31 @@
+{
+  "component": {
+    "structure": {
+      "type": "node",
+      "tag": "div",
+      "style": {
+        "base": {
+          "fontSize": "var(--t-fs)",
+          "letterSpacing": "var(--t-ls)",
+          "fontWeight": "var(--t-fw)",
+          "lineHeight": "var(--t-lh)",
+          "color": "var(--text)"
+        },
+        "tablet": {},
+        "mobile": {}
+      },
+      "attributes": {
+        "cmsrt": true
+      },
+      "children": "{{content}}"
+    },
+    "interface": {
+      "content": {
+        "type": "rich-text",
+        "default": "Rich text",
+        "editor": "extended"
+      }
+    },
+    "css": "[cmsrt] h1,\n[cmsrt] h2,\n[cmsrt] h3,\n[cmsrt] h4,\n[cmsrt] h5,\n[cmsrt] h6 {\n  font-weight: var(--h-fw);\n  letter-spacing: var(--h-ls);\n  color: var(--text);\n  margin-top: 32px;\n  margin-bottom: 8px;\n}\n\n[cmsrt] h1 { font-size: var(--h-fs); }\n[cmsrt] h2 { font-size: var(--he-fs); }\n[cmsrt] h3 { font-size: var(--hea-fs); }\n[cmsrt] h4 { font-size: var(--head-fs); }\n\n[cmsrt] p {\n  margin-bottom: 16px;\n}\n\n[cmsrt] a {\n  color: var(--text);\n  text-decoration: underline;\n}\n\n[cmsrt] ul,\n[cmsrt] ol {\n  margin-bottom: 16px;\n  padding-left: 24px;\n}\n\n[cmsrt] li {\n  margin-bottom: 8px;\n}\n\n[cmsrt] blockquote {\n  border-left: 3px solid var(--border);\n  padding-left: 16px;\n  margin: 24px 0;\n  color: var(--muted);\n}\n\n[cmsrt] img {\n  max-width: 100%;\n  height: auto;\n  border-radius: 8px;\n  margin: 24px 0;\n}"
+  }
+}
