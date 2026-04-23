@@ -84,8 +84,12 @@
                 },
                 "style": {
                   "base": {
-                    "marginTop": "24px"
-                  }
+                    "marginTop": "24px",
+                    "maxWidth": "592px",
+                    "margin": "auto"
+                  },
+                  "tablet": {},
+                  "mobile": {}
                 }
               }
             ]
