@@ -43,7 +43,7 @@
               "component": "Heading",
               "props": {
                 "text": "{{question}}",
-                "tag": 2
+                "tag": 3
               },
               "style": {
                 "base": {

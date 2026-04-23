@@ -1,12 +1,5 @@
 {
-  "filePath": "components/FaqQuestion.json",
-  "locator": "components/FaqQuestion.json:41-56  <Heading>",
-  "props": {
-    "text": "{{question}}",
-    "tag": 2
-  },
-  "navigationPath": [
-    "pages/index.json",
-    "components/FaqQuestion.json"
-  ]
+  "filePath": "pages/index.json",
+  "locator": "pages/index.json:172-262  <Section>",
+  "navigationPath": []
 }

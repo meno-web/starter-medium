@@ -227,7 +227,7 @@
                     "props": {
                       "answer": "Short supporting description that previews how this section looks and reads in the editor",
                       "question": "First question",
-                      "isOpen": true
+                      "isOpen": false
                     }
                   },
                   {
