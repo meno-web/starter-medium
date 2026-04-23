@@ -1,8 +1,5 @@
 {
   "filePath": "pages/templates/blog.json",
-  "locator": "pages/templates/blog.json:79-90  <RichText>",
-  "props": {
-    "content": "{{cms.content}}"
-  },
+  "locator": "pages/templates/blog.json:6-94  <Section>",
   "navigationPath": []
 }
