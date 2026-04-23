@@ -69,22 +69,18 @@
                       "children": "Starter"
                     },
                     {
-                      "type": "node",
-                      "tag": "p",
+                      "type": "component",
+                      "component": "Text",
+                      "props": {
+                        "text": "Short tagline that previews how this footer copy reads in the editor."
+                      },
                       "style": {
                         "base": {
-                          "fontSize": "var(--t-fs)",
-                          "letterSpacing": "var(--t-ls)",
-                          "fontWeight": "var(--t-fw)",
-                          "lineHeight": "var(--t-lh)",
                           "color": "var(--muted)",
                           "maxWidth": "320px",
                           "margin": "0"
-                        },
-                        "tablet": {},
-                        "mobile": {}
-                      },
-                      "children": "Short tagline that previews how this footer copy reads in the editor."
+                        }
+                      }
                     }
                   ]
                 },
@@ -94,22 +90,8 @@
                   "label": "Column1",
                   "children": [
                     {
-                      "type": "node",
-                      "tag": "span",
-                      "style": {
-                        "base": {
-                          "display": "block",
-                          "fontSize": "var(--s-fs)",
-                          "letterSpacing": "var(--s-ls)",
-                          "fontWeight": "var(--s-fw)",
-                          "textTransform": "var(--subtitle)",
-                          "color": "var(--text)",
-                          "marginBottom": "16px"
-                        },
-                        "tablet": {},
-                        "mobile": {}
-                      },
-                      "children": "Product"
+                      "type": "component",
+                      "component": "FooterLinkTitle"
                     },
                     {
                       "type": "node",
@@ -126,97 +108,24 @@
                       },
                       "children": [
                         {
-                          "type": "node",
-                          "tag": "li",
-                          "children": [
-                            {
-                              "type": "link",
-                              "href": "#features",
-                              "style": {
-                                "base": {
-                                  "color": "var(--muted)",
-                                  "fontSize": "var(--t-fs)",
-                                  "letterSpacing": "var(--t-ls)",
-                                  "fontWeight": "var(--t-fw)",
-                                  "textDecoration": "none",
-                                  "transition": "color 0.2s"
-                                }
-                              },
-                              "interactiveStyles": [
-                                {
-                                  "name": "hover",
-                                  "prefix": "",
-                                  "postfix": ":hover",
-                                  "style": {
-                                    "base": { "color": "var(--text)" }
-                                  }
-                                }
-                              ],
-                              "children": "Features"
-                            }
-                          ]
+                          "type": "component",
+                          "component": "FooterLink"
                         },
                         {
-                          "type": "node",
-                          "tag": "li",
-                          "children": [
-                            {
-                              "type": "link",
-                              "href": "#pricing",
-                              "style": {
-                                "base": {
-                                  "color": "var(--muted)",
-                                  "fontSize": "var(--t-fs)",
-                                  "letterSpacing": "var(--t-ls)",
-                                  "fontWeight": "var(--t-fw)",
-                                  "textDecoration": "none",
-                                  "transition": "color 0.2s"
-                                }
-                              },
-                              "interactiveStyles": [
-                                {
-                                  "name": "hover",
-                                  "prefix": "",
-                                  "postfix": ":hover",
-                                  "style": {
-                                    "base": { "color": "var(--text)" }
-                                  }
-                                }
-                              ],
-                              "children": "Pricing"
-                            }
-                          ]
+                          "type": "component",
+                          "component": "FooterLink",
+                          "props": {
+                            "text": "Pricing",
+                            "link": "#pricing"
+                          }
                         },
                         {
-                          "type": "node",
-                          "tag": "li",
-                          "children": [
-                            {
-                              "type": "link",
-                              "href": "#integrations",
-                              "style": {
-                                "base": {
-                                  "color": "var(--muted)",
-                                  "fontSize": "var(--t-fs)",
-                                  "letterSpacing": "var(--t-ls)",
-                                  "fontWeight": "var(--t-fw)",
-                                  "textDecoration": "none",
-                                  "transition": "color 0.2s"
-                                }
-                              },
-                              "interactiveStyles": [
-                                {
-                                  "name": "hover",
-                                  "prefix": "",
-                                  "postfix": ":hover",
-                                  "style": {
-                                    "base": { "color": "var(--text)" }
-                                  }
-                                }
-                              ],
-                              "children": "Integrations"
-                            }
-                          ]
+                          "type": "component",
+                          "component": "FooterLink",
+                          "props": {
+                            "text": "Integrations",
+                            "link": "#integrations"
+                          }
                         }
                       ]
                     }
@@ -228,22 +137,11 @@
                   "label": "Column2",
                   "children": [
                     {
-                      "type": "node",
-                      "tag": "span",
-                      "style": {
-                        "base": {
-                          "display": "block",
-                          "fontSize": "var(--s-fs)",
-                          "letterSpacing": "var(--s-ls)",
-                          "fontWeight": "var(--s-fw)",
-                          "textTransform": "var(--subtitle)",
-                          "color": "var(--text)",
-                          "marginBottom": "16px"
-                        },
-                        "tablet": {},
-                        "mobile": {}
-                      },
-                      "children": "Company"
+                      "type": "component",
+                      "component": "FooterLinkTitle",
+                      "props": {
+                        "text": "Company"
+                      }
                     },
                     {
                       "type": "node",
@@ -260,97 +158,28 @@
                       },
                       "children": [
                         {
-                          "type": "node",
-                          "tag": "li",
-                          "children": [
-                            {
-                              "type": "link",
-                              "href": "#about",
-                              "style": {
-                                "base": {
-                                  "color": "var(--muted)",
-                                  "fontSize": "var(--t-fs)",
-                                  "letterSpacing": "var(--t-ls)",
-                                  "fontWeight": "var(--t-fw)",
-                                  "textDecoration": "none",
-                                  "transition": "color 0.2s"
-                                }
-                              },
-                              "interactiveStyles": [
-                                {
-                                  "name": "hover",
-                                  "prefix": "",
-                                  "postfix": ":hover",
-                                  "style": {
-                                    "base": { "color": "var(--text)" }
-                                  }
-                                }
-                              ],
-                              "children": "About"
-                            }
-                          ]
+                          "type": "component",
+                          "component": "FooterLink",
+                          "props": {
+                            "text": "About",
+                            "link": "#about"
+                          }
                         },
                         {
-                          "type": "node",
-                          "tag": "li",
-                          "children": [
-                            {
-                              "type": "link",
-                              "href": "/blog",
-                              "style": {
-                                "base": {
-                                  "color": "var(--muted)",
-                                  "fontSize": "var(--t-fs)",
-                                  "letterSpacing": "var(--t-ls)",
-                                  "fontWeight": "var(--t-fw)",
-                                  "textDecoration": "none",
-                                  "transition": "color 0.2s"
-                                }
-                              },
-                              "interactiveStyles": [
-                                {
-                                  "name": "hover",
-                                  "prefix": "",
-                                  "postfix": ":hover",
-                                  "style": {
-                                    "base": { "color": "var(--text)" }
-                                  }
-                                }
-                              ],
-                              "children": "Blog"
-                            }
-                          ]
+                          "type": "component",
+                          "component": "FooterLink",
+                          "props": {
+                            "text": "Blog",
+                            "link": "/blog"
+                          }
                         },
                         {
-                          "type": "node",
-                          "tag": "li",
-                          "children": [
-                            {
-                              "type": "link",
-                              "href": "#careers",
-                              "style": {
-                                "base": {
-                                  "color": "var(--muted)",
-                                  "fontSize": "var(--t-fs)",
-                                  "letterSpacing": "var(--t-ls)",
-                                  "fontWeight": "var(--t-fw)",
-                                  "textDecoration": "none",
-                                  "transition": "color 0.2s"
-                                }
-                              },
-                              "interactiveStyles": [
-                                {
-                                  "name": "hover",
-                                  "prefix": "",
-                                  "postfix": ":hover",
-                                  "style": {
-                                    "base": { "color": "var(--text)" }
-                                  }
-                                }
-                              ],
-                              "children": "Careers"
-                            }
-                          ]
+                          "type": "component",
+                          "component": "FooterLink",
+                          "props": {
+                            "text": "Careers",
+                            "link": "#careers"
+                          }
                         }
                       ]
                     }
@@ -362,22 +191,11 @@
                   "label": "Column3",
                   "children": [
                     {
-                      "type": "node",
-                      "tag": "span",
-                      "style": {
-                        "base": {
-                          "display": "block",
-                          "fontSize": "var(--s-fs)",
-                          "letterSpacing": "var(--s-ls)",
-                          "fontWeight": "var(--s-fw)",
-                          "textTransform": "var(--subtitle)",
-                          "color": "var(--text)",
-                          "marginBottom": "16px"
-                        },
-                        "tablet": {},
-                        "mobile": {}
-                      },
-                      "children": "Support"
+                      "type": "component",
+                      "component": "FooterLinkTitle",
+                      "props": {
+                        "text": "Support"
+                      }
                     },
                     {
                       "type": "node",
@@ -394,97 +212,28 @@
                       },
                       "children": [
                         {
-                          "type": "node",
-                          "tag": "li",
-                          "children": [
-                            {
-                              "type": "link",
-                              "href": "#help",
-                              "style": {
-                                "base": {
-                                  "color": "var(--muted)",
-                                  "fontSize": "var(--t-fs)",
-                                  "letterSpacing": "var(--t-ls)",
-                                  "fontWeight": "var(--t-fw)",
-                                  "textDecoration": "none",
-                                  "transition": "color 0.2s"
-                                }
-                              },
-                              "interactiveStyles": [
-                                {
-                                  "name": "hover",
-                                  "prefix": "",
-                                  "postfix": ":hover",
-                                  "style": {
-                                    "base": { "color": "var(--text)" }
-                                  }
-                                }
-                              ],
-                              "children": "Help Center"
-                            }
-                          ]
+                          "type": "component",
+                          "component": "FooterLink",
+                          "props": {
+                            "text": "Help Center",
+                            "link": "#help"
+                          }
                         },
                         {
-                          "type": "node",
-                          "tag": "li",
-                          "children": [
-                            {
-                              "type": "link",
-                              "href": "#contact",
-                              "style": {
-                                "base": {
-                                  "color": "var(--muted)",
-                                  "fontSize": "var(--t-fs)",
-                                  "letterSpacing": "var(--t-ls)",
-                                  "fontWeight": "var(--t-fw)",
-                                  "textDecoration": "none",
-                                  "transition": "color 0.2s"
-                                }
-                              },
-                              "interactiveStyles": [
-                                {
-                                  "name": "hover",
-                                  "prefix": "",
-                                  "postfix": ":hover",
-                                  "style": {
-                                    "base": { "color": "var(--text)" }
-                                  }
-                                }
-                              ],
-                              "children": "Contact"
-                            }
-                          ]
+                          "type": "component",
+                          "component": "FooterLink",
+                          "props": {
+                            "text": "Contact",
+                            "link": "#contact"
+                          }
                         },
                         {
-                          "type": "node",
-                          "tag": "li",
-                          "children": [
-                            {
-                              "type": "link",
-                              "href": "#status",
-                              "style": {
-                                "base": {
-                                  "color": "var(--muted)",
-                                  "fontSize": "var(--t-fs)",
-                                  "letterSpacing": "var(--t-ls)",
-                                  "fontWeight": "var(--t-fw)",
-                                  "textDecoration": "none",
-                                  "transition": "color 0.2s"
-                                }
-                              },
-                              "interactiveStyles": [
-                                {
-                                  "name": "hover",
-                                  "prefix": "",
-                                  "postfix": ":hover",
-                                  "style": {
-                                    "base": { "color": "var(--text)" }
-                                  }
-                                }
-                              ],
-                              "children": "Status"
-                            }
-                          ]
+                          "type": "component",
+                          "component": "FooterLink",
+                          "props": {
+                            "text": "Status",
+                            "link": "#status"
+                          }
                         }
                       ]
                     }
@@ -514,19 +263,17 @@
               },
               "children": [
                 {
-                  "type": "node",
-                  "tag": "span",
+                  "type": "component",
+                  "component": "Text",
+                  "props": {
+                    "text": "© 2026 Starter. All rights reserved."
+                  },
                   "style": {
                     "base": {
                       "fontSize": "14px",
-                      "letterSpacing": "var(--t-ls)",
-                      "fontWeight": "var(--t-fw)",
                       "color": "var(--muted)"
-                    },
-                    "tablet": {},
-                    "mobile": {}
-                  },
-                  "children": "© 2026 Starter. All rights reserved."
+                    }
+                  }
                 },
                 {
                   "type": "node",
@@ -556,7 +303,11 @@
                           "name": "hover",
                           "prefix": "",
                           "postfix": ":hover",
-                          "style": { "base": { "color": "var(--text)" } }
+                          "style": {
+                            "base": {
+                              "color": "var(--text)"
+                            }
+                          }
                         }
                       ],
                       "children": "Privacy policy"
@@ -579,7 +330,11 @@
                           "name": "hover",
                           "prefix": "",
                           "postfix": ":hover",
-                          "style": { "base": { "color": "var(--text)" } }
+                          "style": {
+                            "base": {
+                              "color": "var(--text)"
+                            }
+                          }
                         }
                       ],
                       "children": "Terms of Service"

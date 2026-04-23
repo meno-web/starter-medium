@@ -3,9 +3,6 @@
     "structure": {
       "type": "node",
       "tag": "div",
-      "attributes": {
-        "data-faq-item": "true"
-      },
       "style": {
         "base": {
           "width": "100%",
@@ -14,14 +11,13 @@
         "tablet": {},
         "mobile": {}
       },
+      "attributes": {
+        "data-faq-item": "true"
+      },
       "children": [
         {
           "type": "node",
           "tag": "button",
-          "attributes": {
-            "data-faq-toggle": "true",
-            "type": "button"
-          },
           "style": {
             "base": {
               "width": "100%",
@@ -37,34 +33,30 @@
             "tablet": {},
             "mobile": {}
           },
+          "attributes": {
+            "data-faq-toggle": "true",
+            "type": "button"
+          },
           "children": [
             {
-              "type": "node",
-              "tag": "h3",
+              "type": "component",
+              "component": "Heading",
+              "props": {
+                "text": "{{question}}",
+                "tag": 2
+              },
               "style": {
                 "base": {
                   "fontSize": "var(--hea-fs)",
-                  "letterSpacing": "var(--h-ls)",
-                  "fontWeight": "var(--h-fw)",
-                  "lineHeight": "var(--h-lh)",
-                  "color": "var(--text)",
                   "margin": "0",
                   "textAlign": "left",
                   "flex": "1"
-                },
-                "tablet": {},
-                "mobile": {}
-              },
-              "children": [
-                "{{question}}"
-              ]
+                }
+              }
             },
             {
               "type": "node",
               "tag": "span",
-              "attributes": {
-                "data-faq-icon": "true"
-              },
               "style": {
                 "base": {
                   "fontSize": "20px",
@@ -78,6 +70,9 @@
                 "tablet": {},
                 "mobile": {}
               },
+              "attributes": {
+                "data-faq-icon": "true"
+              },
               "children": [
                 "+"
               ]
@@ -87,9 +82,6 @@
         {
           "type": "node",
           "tag": "div",
-          "attributes": {
-            "data-faq-answer": "true"
-          },
           "style": {
             "base": {
               "maxHeight": "0",
@@ -99,6 +91,9 @@
             },
             "tablet": {},
             "mobile": {}
+          },
+          "attributes": {
+            "data-faq-answer": "true"
           },
           "children": [
             {
@@ -134,6 +129,7 @@
         "type": "string",
         "default": "Short supporting description that previews how this section looks and reads in the editor"
       }
-    }
+    },
+    "defineVars": true
   }
 }

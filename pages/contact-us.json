@@ -5,26 +5,13 @@
     "children": [
       {
         "type": "component",
-        "component": "Navigation"
-      },
-      {
-        "type": "node",
-        "tag": "section",
-        "style": {
-          "base": {
-            "padding": "var(--s-p)",
-            "backgroundColor": "var(--bg)"
-          },
-          "tablet": {},
-          "mobile": {}
-        },
+        "component": "Section",
         "children": [
           {
             "type": "node",
-            "tag": "container",
+            "tag": "div",
             "style": {
               "base": {
-                "display": "block",
                 "maxWidth": "640px",
                 "margin": "auto"
               },
@@ -229,41 +216,14 @@
                     }
                   },
                   {
-                    "type": "node",
-                    "tag": "button",
-                    "style": {
-                      "base": {
-                        "padding": "var(--b-p)",
-                        "display": "inline-flex",
-                        "flexDirection": "row",
-                        "justifyContent": "center",
-                        "alignItems": "center",
-                        "backgroundColor": "var(--accent)",
-                        "borderRadius": "var(--b-br)",
-                        "color": "var(--white)",
-                        "fontSize": "var(--te-fs)",
-                        "fontWeight": "500",
-                        "border": "none",
-                        "cursor": "pointer",
-                        "marginTop": "var(--b-m)"
-                      },
-                      "tablet": {},
-                      "mobile": {}
-                    },
-                    "attributes": {
-                      "type": "submit"
-                    },
-                    "children": "Send Message"
+                    "type": "component",
+                    "component": "SubmitButton"
                   }
                 ]
               }
             ]
           }
         ]
-      },
-      {
-        "type": "component",
-        "component": "Footer"
       }
     ]
   },
