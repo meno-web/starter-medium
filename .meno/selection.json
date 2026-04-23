@@ -1,5 +1,5 @@
 {
   "filePath": "pages/blog.json",
-  "locator": "pages/blog.json:256-259  <Section>",
+  "locator": "pages/blog.json:46-63  <p>",
   "navigationPath": []
 }
