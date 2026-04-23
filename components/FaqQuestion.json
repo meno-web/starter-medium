@@ -43,7 +43,7 @@
               "component": "Heading",
               "props": {
                 "text": "{{question}}",
-                "tag": 2
+                "tag": 3
               },
               "style": {
                 "base": {
@@ -70,6 +70,19 @@
                 "tablet": {},
                 "mobile": {}
               },
+              "interactiveStyles": [
+                {
+                  "name": "when open",
+                  "prefix": "[data-faq-item].is-open ",
+                  "postfix": "",
+                  "style": {
+                    "base": {
+                      "transform": "rotate(45deg)"
+                    }
+                  },
+                  "previewProp": "isOpen"
+                }
+              ],
               "attributes": {
                 "data-faq-icon": "true"
               },
@@ -92,29 +105,36 @@
             "tablet": {},
             "mobile": {}
           },
+          "interactiveStyles": [
+            {
+              "name": "when open",
+              "prefix": "[data-faq-item].is-open ",
+              "postfix": "",
+              "style": {
+                "base": {
+                  "maxHeight": "1000px",
+                  "paddingBottom": "20px"
+                }
+              },
+              "previewProp": "isOpen"
+            }
+          ],
           "attributes": {
             "data-faq-answer": "true"
           },
           "children": [
             {
-              "type": "node",
-              "tag": "p",
+              "type": "component",
+              "component": "Text",
+              "props": {
+                "text": "{{answer}}"
+              },
               "style": {
                 "base": {
-                  "fontSize": "var(--t-fs)",
-                  "letterSpacing": "var(--t-ls)",
-                  "fontWeight": "var(--t-fw)",
-                  "lineHeight": "var(--t-lh)",
-                  "color": "var(--text)",
                   "maxWidth": "530px",
                   "margin": "0 0 20px 0"
-                },
-                "tablet": {},
-                "mobile": {}
-              },
-              "children": [
-                "{{answer}}"
-              ]
+                }
+              }
             }
           ]
         }
@@ -128,6 +148,10 @@
       "answer": {
         "type": "string",
         "default": "Short supporting description that previews how this section looks and reads in the editor"
+      },
+      "isOpen": {
+        "type": "boolean",
+        "default": false
       }
     },
     "defineVars": true
