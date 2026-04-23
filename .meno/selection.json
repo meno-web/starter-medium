@@ -1,5 +1,9 @@
 {
   "filePath": "pages/index.json",
-  "locator": "pages/index.json:341-344  <BlogListCard>",
+  "locator": "pages/index.json:224-231  <FaqQuestion>",
+  "props": {
+    "answer": "Short supporting description that previews how this section looks and reads in the editor",
+    "question": "First question"
+  },
   "navigationPath": []
 }

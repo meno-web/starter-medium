@@ -73,6 +73,19 @@
               "attributes": {
                 "data-faq-icon": "true"
               },
+              "interactiveStyles": [
+                {
+                  "name": "when open",
+                  "prefix": "[data-faq-item].is-open ",
+                  "postfix": "",
+                  "previewProp": "isOpen",
+                  "style": {
+                    "base": {
+                      "transform": "rotate(45deg)"
+                    }
+                  }
+                }
+              ],
               "children": [
                 "+"
               ]
@@ -95,6 +108,20 @@
           "attributes": {
             "data-faq-answer": "true"
           },
+          "interactiveStyles": [
+            {
+              "name": "when open",
+              "prefix": "[data-faq-item].is-open ",
+              "postfix": "",
+              "previewProp": "isOpen",
+              "style": {
+                "base": {
+                  "maxHeight": "1000px",
+                  "paddingBottom": "20px"
+                }
+              }
+            }
+          ],
           "children": [
             {
               "type": "node",
@@ -128,6 +155,10 @@
       "answer": {
         "type": "string",
         "default": "Short supporting description that previews how this section looks and reads in the editor"
+      },
+      "isOpen": {
+        "type": "boolean",
+        "default": false
       }
     },
     "defineVars": true
