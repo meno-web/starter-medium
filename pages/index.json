@@ -43,7 +43,7 @@
                 "type": "component",
                 "component": "Text",
                 "props": {
-                  "text": "Design and publish professional websites without writing code. Start with this template and make it yours in minutes."
+                  "text": "Design and publish professional websites without writing code. Start with this template and make it yours in minutes"
                 },
                 "style": {
                   "base": {
