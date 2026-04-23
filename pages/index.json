@@ -101,13 +101,40 @@
         "component": "Section",
         "children": [
           {
-            "type": "node",
-            "tag": "container",
+            "type": "component",
+            "component": "Heading",
+            "props": {
+              "text": "<!--MENO_RAW_HTML-->This is <span class=\"custom-span\" data-meno-span=\"true\">features</span> headline",
+              "tag": 1
+            },
             "style": {
               "base": {
-                "display": "block",
-                "margin": "auto",
-                "maxWidth": "var(--c-s)"
+                "fontSize": "var(--he-fs)",
+                "marginBottom": "var(--h-m)"
+              }
+            }
+          },
+          {
+            "type": "component",
+            "component": "Text",
+            "props": {
+              "text": "Short supporting description that previews how this section looks and reads in the editor"
+            },
+            "style": {
+              "base": {
+                "maxWidth": "380px"
+              }
+            }
+          },
+          {
+            "type": "node",
+            "tag": "div",
+            "style": {
+              "base": {
+                "display": "grid",
+                "gridTemplateColumns": "1fr 1fr 1fr",
+                "gap": "16px",
+                "marginTop": "40px"
               },
               "tablet": {},
               "mobile": {}
@@ -115,74 +142,27 @@
             "children": [
               {
                 "type": "component",
-                "component": "Heading",
+                "component": "FeatureCard",
                 "props": {
-                  "text": "<!--MENO_RAW_HTML-->This is <span class=\"custom-span\" data-meno-span=\"true\">features</span> headline",
-                  "tag": 1
-                },
-                "style": {
-                  "base": {
-                    "fontSize": "var(--he-fs)",
-                    "marginBottom": "var(--h-m)"
-                  }
+                  "description": "This is description",
+                  "text": "Feature 1"
                 }
               },
               {
-                "type": "node",
-                "tag": "p",
-                "style": {
-                  "base": {
-                    "fontSize": "var(--t-fs)",
-                    "letterSpacing": "var(--t-ls)",
-                    "fontWeight": "var(--t-fw)",
-                    "lineHeight": "var(--t-lh)",
-                    "color": "var(--text)",
-                    "maxWidth": "380px"
-                  },
-                  "tablet": {},
-                  "mobile": {}
-                },
-                "children": "Short supporting description that previews how this section looks and reads in the editor"
+                "type": "component",
+                "component": "FeatureCard",
+                "props": {
+                  "description": "This is description",
+                  "text": "Feature 2"
+                }
               },
               {
-                "type": "node",
-                "tag": "div",
-                "style": {
-                  "base": {
-                    "display": "grid",
-                    "gridTemplateColumns": "1fr 1fr 1fr",
-                    "gap": "16px",
-                    "marginTop": "40px"
-                  },
-                  "tablet": {},
-                  "mobile": {}
-                },
-                "children": [
-                  {
-                    "type": "component",
-                    "component": "FeatureCard",
-                    "props": {
-                      "description": "This is description",
-                      "text": "Feature 1"
-                    }
-                  },
-                  {
-                    "type": "component",
-                    "component": "FeatureCard",
-                    "props": {
-                      "description": "This is description",
-                      "text": "Feature 2"
-                    }
-                  },
-                  {
-                    "type": "component",
-                    "component": "FeatureCard",
-                    "props": {
-                      "description": "This is description",
-                      "text": "Feature 3"
-                    }
-                  }
-                ]
+                "type": "component",
+                "component": "FeatureCard",
+                "props": {
+                  "description": "This is description",
+                  "text": "Feature 3"
+                }
               }
             ]
           }

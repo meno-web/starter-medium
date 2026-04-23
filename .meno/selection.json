@@ -1,5 +1,9 @@
 {
   "filePath": "pages/index.json",
-  "locator": "pages/index.json:115-200  <container>",
+  "locator": "pages/index.json:143-150  <FeatureCard>",
+  "props": {
+    "description": "This is description",
+    "text": "Feature 1"
+  },
   "navigationPath": []
 }
